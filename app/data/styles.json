@@ -1,0 +1,50 @@
+[
+  {
+    "id":"baker_bridge",
+    "name":"BAKER BRIDGE",
+    "label":"LA PETITE NOTE DE CLASSICISME EN PLUS...",
+    "description":"BAKER BRIDGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor en",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"baker-bridge.png",
+    "category":"home"
+  },
+  {
+    "id":"american_vintage",
+    "name":"AMERICAN VINTAGE",
+    "label":"LE STYLE PUR ET AUTHENTIQUE",
+    "description":"AMERICAN VINTAGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor enim, eget dignissim lorem commodo at. In a augue id sem lacinia semper. In tincidunt ullamcorper imperdiet. Aliquam pellentesque massa id tempus vulputate. Aliquam sodales a felis ut tempor",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"logo-american-vintage.png",
+    "category":"home"
+  },
+  {
+    "id":"baker_bridge",
+    "name":"BAKER BRIDGE",
+    "label":"LA PETITE NOTE DE CLASSICISME EN PLUS...",
+    "description":"BAKER BRIDGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor en",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"baker-bridge.png",
+    "category":"style"
+  },
+  {
+    "id":"american_vintage",
+    "name":"AMERICAN VINTAGE",
+    "label":"LE STYLE PUR ET AUTHENTIQUE",
+    "description":"AMERICAN VINTAGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor enim, eget dignissim lorem commodo at. In a augue id sem lacinia semper. In tincidunt ullamcorper imperdiet. Aliquam pellentesque massa id tempus vulputate. Aliquam sodales a felis ut tempor",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"logo-american-vintage.png",
+    "category":"accessories"
+  }
+]

@@ -1,0 +1,29 @@
+<div ng-repeat="style in cmp.currentStyles">
+    <div vertical layout>
+        <div horizontal layout>
+            <h3>{{style.name}}.</h3>&nbsp;&nbsp;<h4 class="pink">{{style.label}}</h4>
+        </div>
+        <div ng-if="$even" id="style-line" horizontal justified layout>
+            <div ng-repeat="img in style.images" flex four horizontal layout>
+                <img id="style-image" ng-src="data/styles/{{style.id}}/{{img}}">
+            </div>
+            <div vertical layout flex four>
+                <div id="style-description">{{style.description}}</div>
+                <div horizontal layout end-justified end>
+                    <div><img id="style-brand" ng-src="data/styles/{{style.id}}/{{style.brandIcon}}" /></div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="$odd" id="style-line" horizontal justified layout>
+            <div vertical layout flex four>
+                <div id="style-description">{{style.description}}</div>
+                <div horizontal layout end-justified end>
+                    <div><img id="style-brand" ng-src="data/styles/{{style.id}}/{{style.brandIcon}}" /></div>
+                </div>
+            </div>
+            <div ng-repeat="img in style.images" flex four horizontal  end-justified layout>
+                <img id="style-image" ng-src="data/styles/{{style.id}}/{{img}}">
+            </div>
+        </div>
+    </div>
+</div>

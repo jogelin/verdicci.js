@@ -1,17 +1,12 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name verdiccijsApp
- * @description
- * # verdiccijsApp
- *
- * Main module of the application.
- */
-angular
-  .module('verdiccijsApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngSanitize',
-    'ngTouch'
-  ]);
+(function(){
+angular.module('verdicci', ['ngResource','ngRoute','ngAnimate', 'ngMaterial']);
+
+    angular.module('verdicci', ['ngRoute','verdicci.menu','verdicci.welcome'])
+        .config(['$routeProvider', function($routeProvider) {
+            $routeProvider.otherwise({redirectTo: '/welcome'});
+        }
+    ]);
+
+})();

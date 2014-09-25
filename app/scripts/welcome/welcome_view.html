@@ -1,0 +1,41 @@
+<div layout="horizontal" ng-controller="WelcomeCtrl as welcomeCtrl">
+    <div layout="vertical" flex="70" welcome-content>
+        <div class="justified">
+           <h2 class="pink">BIENVENUE</h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor enim, eget dignissim lorem commodo at. In a augue id sem lacinia semper. In tincidunt ullamcorper imperdiet. Aliquam pellentesque massa id tempus vulputate. Aliquam sodales a felis ut tempor
+        </div>
+        <div layout="vertical">
+            <div><h1>NEWS</h1></div>
+            <div id="news-line" ng-repeat="nn in welcomeCtrl.news" layout="horizontal">
+                <div id="news-image" ng-style="{'background-image': 'url(data/news/{{nn.id}}/{{nn.image}})'}">
+                    <img ng-src="images/polaroid_background.png"/>
+                </div>
+                <div id="news-description" class="justified" flex>
+                    <h2 class="pink">{{nn.name}}</h2> {{nn.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div flex></div>
+    <div layout="vertical" layout-align="space-around" flex="25">
+        <div class="cadre" layout="vertical">
+            <div class="cadre_title"><h2 class="light_gray">OUVERTURE</h2></div>
+            <div class="cadre_content">
+                Du Mercredi au Samedi<br />
+                de 10h30 à 18h<br />
+                <br />
+                Le Dimanche<br />
+                de 11h à 17h
+            </div>
+        </div>
+        <div class="cadre" layout="vertical">
+            <div class="cadre_title"><h2 class="light_gray">ADRESSE</h2></div>
+            <div class="cadre_content">
+                Rue Colonel Bourg, 1<br />
+                5170 Profondville<br />
+                081/67.89.45.76<br />
+                <br />
+                <a href="mailto:">Contacter VERDICCI</a>
+            </div>
+        </div>
+    </div>
+</div>

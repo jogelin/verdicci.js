@@ -1,0 +1,55 @@
+
+material-toolbar[verdicci-menu] {
+    margin-bottom:20px;
+}
+
+#menu-button-content {
+    padding: 10px 0;
+}
+
+material-button[menu-button] {
+    font-family:hellogoodbye;
+    font-size:24pt;
+    color:#8A908E;
+    white-space: nowrap;
+    padding:0;
+}
+
+material-button[menu-button], material-button[disabled], material-button[menu-button]:hover {
+
+    background-image: url('../../images/menu_underline.png') !important;
+    -webkit-background-size: 100% 10px !important;
+    -o-background-size: 100% 10px !important;
+    -moz-background-size: 100% 10px !important;
+    background-size: 100% 10px !important;
+    background-repeat: no-repeat !important;
+    background-position:center bottom !important;
+    background-color: transparent !important;
+}
+
+material-button[disabled] {
+    color:#B9C1BE !important;
+}
+
+material-button[menu-button]:hover {
+    color:#F29AA4; !important;
+}
+
+#menu-icon-content {
+    padding: 5px 0;
+}
+
+material-button[menu-icon].material-button-fab {
+    box-shadow:none;
+    height:48px;
+    width:48px;
+}
+
+material-button[menu-icon].material-button-fab:hover {
+    background-color: transparent;
+}
+
+material-button[menu-icon] > img {
+    height:48px;
+    width:48px;
+}

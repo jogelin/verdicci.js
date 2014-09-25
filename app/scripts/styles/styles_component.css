@@ -1,0 +1,28 @@
+
+#style-description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#style-image {
+    height:256px;
+    border:3px solid #fff;
+    -moz-box-shadow: 4px 4px 2px 0px #656565;
+    -webkit-box-shadow: 4px 4px 2px 0px #656565;
+    -o-box-shadow: 4px 4px 2px 0px #656565;
+    box-shadow: 4px 4px 2px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=2);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+}
+
+#style-brand {
+    margin-top:20px;
+}
+
+#style-line {
+    margin-bottom:20px;
+}
+
