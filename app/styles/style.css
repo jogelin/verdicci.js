@@ -48,9 +48,13 @@ material-content #page {
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    padding:5px 35px;
+    padding:5px 35px 10px 35px;
 }
 
 div[ng-view] {
 
+}
+
+div[lines-content] > div {
+    padding: 15px 0;
 }

@@ -27,7 +27,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4 {
+html h1, html h2, html h3, html h4, body h1, body h2, body h3, body h4 {
     font-family:hellogoodbye;
     color:#535353;
     font-weight: normal;
@@ -49,21 +49,21 @@ h1, h2, h3, h4 {
     -o-margin-end: 0px;
 }
 
-h1 {
+html h1, body h1 {
     line-height:55px;
     font-size:34pt;
 }
 
-h2 {
+html h2, body h2 {
     font-size:28pt;
     line-height:28pt;
 }
 
-h3 {
+html h3, body h3 {
     font-size:22pt;
 }
 
-h4 {
+html h4, body h4 {
     font-size:16pt;
     -webkit-margin-before: 1.4em;
 }

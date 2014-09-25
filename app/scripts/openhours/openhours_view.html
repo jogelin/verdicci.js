@@ -1,13 +1,11 @@
 
-<div id="open-hours" open-hours-ctrl vertical layout>
+<div layout="vertical" ng-controller="OpenHoursCtrl as openHoursCtrl" lines-content>
     <div>
-        <p>
-            <h2 class="pink">VERDICCI</h2> à le plasir de vous acceuillir du  Mercredi au Samedi de 10h30 à 18h<br />
-            et Le Dimanche de 11h à 17h
-        </p>
+        <h2 class="pink">VERDICCI</h2> à le plasir de vous acceuillir du  Mercredi au Samedi de 10h30 à 18h<br />
+        et Le Dimanche de 11h à 17h
         <br /><br />
     </div>
-    <div horizontal center-justified layout >
+    <div layout="horizontal" layout-align="center" >
         <img ng-src="images/openhours.png" />
     </div>
 </div>

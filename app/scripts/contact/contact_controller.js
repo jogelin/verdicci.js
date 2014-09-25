@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('verdicci.welcome', ['ngRoute'])
+angular.module('verdicci.contact', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/contact', {
