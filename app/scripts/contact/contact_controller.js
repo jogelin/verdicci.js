@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('verdicci.contact', ['ngRoute'])
+angular.module('verdicci.contact', ['ngRoute','ngMap'])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/contact', {
@@ -9,6 +9,6 @@ angular.module('verdicci.contact', ['ngRoute'])
     });
 }])
 
-.controller('ContactCtrl', function() {
+.controller('ContactCtrl', ['$scope', function() {
 
-});
+}]);

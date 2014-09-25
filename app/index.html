@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VERDICCI - Home & Style</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -25,35 +25,35 @@
     <link rel="stylesheet" href="scripts/welcome/welcome.css">
     <link rel="stylesheet" href="scripts/styles/styles.css">
 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
     <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body layout="vertical" layout-fill >
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
     <![endif]-->
 
+        <material-toolbar class="material-whiteframe-z1" verdicci-banner>
+            <div layout="horizontal" flex>
+                <div flex="20"></div>
+                <div layout="vertical" layout-align="center start" flex-sm="95" flex-lg="65">
+                    <div class="toolbar-title">VERDICCI</div>
+                    <div class="toolbar-subtitle">HOME & STYLE</div>
+                </div>
+                <div flex="20"></div>
+            </div>
+        </material-toolbar>
 
-    <material-toolbar class="material-whiteframe-z1" verdicci-banner>
-        <div layout="horizontal" flex>
+        <material-content layout="horizontal" scroll-y flex>
             <div flex="20"></div>
-            <div layout="vertical" layout-align="center start" flex>
-                <div class="toolbar-title">VERDICCI</div>
-                <div class="toolbar-subtitle">HOME & STYLE</div>
+            <div flex  layout="vertical">
+                <div class="verdicci-card" ng-include="'scripts/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
+                <div ng-view flex></div>
             </div>
             <div flex="20"></div>
-
-        </div>
-    </material-toolbar>
-
-    <material-content layout="horizontal" scroll-y>
-        <div flex="20"></div>
-        <div id="page"  class="material-whiteframe-z1" layout="vertical" layout-fill>
-            <div ng-include="'scripts/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
-            <div ng-view flex></div>
-        </div>
-        <div flex="20"></div>
-    </material-content>
+        </material-content>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
@@ -80,6 +80,7 @@
     <script src="bower_components/hammerjs/hammer.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
     <!-- endbower -->
 
 

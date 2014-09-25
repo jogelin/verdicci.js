@@ -1,6 +1,7 @@
 
 material-toolbar[verdicci-menu] {
     margin-bottom:20px;
+
 }
 
 #menu-button-content {
@@ -36,20 +37,20 @@ material-button[menu-button]:hover {
 }
 
 #menu-icon-content {
-    padding: 5px 0;
+    padding: 7px 0;
 }
 
 material-button[menu-icon].material-button-fab {
     box-shadow:none;
-    height:48px;
-    width:48px;
+    height:54px;
+    width:54px;
 }
 
 material-button[menu-icon].material-button-fab:hover {
     background-color: transparent;
 }
 
-material-button[menu-icon] > img {
-    height:48px;
-    width:48px;
+material-button[menu-icon] > button > img {
+    height:46px;
+    width:46px;
 }

@@ -3,7 +3,6 @@ html, body {
     background-image: url('../images/background.png');
     background-color: #F6F1EB;
     background-repeat: repeat;
-   /* overflow:hidden;           */
 }
 
 
@@ -13,6 +12,10 @@ body {
     font-family:"kgsweetnsassy";
     color:#636363;
     font-size:14pt;
+    overflow: hidden;
+
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /*BANNER*/
@@ -43,18 +46,24 @@ material-content {
     padding-top:30px;
 }
 
-material-content #page {
+.verdicci-card{
     background-color:#F6F1EB;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    padding:5px 35px 10px 35px;
+    padding:0 35px;
+    z-index:0;
 }
 
 div[ng-view] {
-
 }
 
 div[lines-content] > div {
     padding: 15px 0;
+}
+
+map, div[map] {display:block; height: 400px}
+
+.view {
+    min-height:600px;
 }

@@ -1,19 +1,13 @@
-<div id="contact" layout="vertical" ng-controller="ContactCtrl as contactCtrl" lines-content>
+<div  class="verdicci-card view" layout="vertical" ng-controller="ContactCtrl as contactCtrl" lines-content>
     <div>
         <h3 class="pink">ADDRESSE:</h3> Rue Colonel Bourg,1 5170 Profondeville<br />
         <h3 class="pink">TELEPHONE:</h3> 081/67.89.45.76<br />
         <h3 class="pink">EMAIL:</h3> <a href="mailto:">Contacter VERDICCI</a>
     </div>
-    <div layout="horizontal">
+    <div layout="horizontal" flex>
 
-        <div class="cadre" flex>
-            <form>
-                <paper-input floatingLabel label="Type your email" type="email" error="Invalid email!"></paper-input>
-                <paper-input multiline rows="5" floatingLabel label="Type your message" error="Please type a message"></paper-input>
-            </form>
-
-        </div>
-        <x-google-map bind-info="true" flex>
-        </x-google-map>
+        <map zoom="16" center="[50.37786, 4.87064]" flex>
+            <marker position="[50.37786, 4.87064]" title="you" icon="images/heart_small.png"></marker>
+        </map>
     </div>
 </div>
