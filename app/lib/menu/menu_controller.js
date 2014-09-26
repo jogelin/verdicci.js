@@ -11,23 +11,6 @@ angular.module('verdicci.menu', ['ngRoute'])
         this.active = _active;
     }
 
-    Menu.prototype.activeFromRoute = function (route) {
-        if(url.contains(route.name)) {
-
-        if(route.parameters['category'] != null)
-            _active = url.contains(route.parameters['category'])?true:false;
-        else
-            _active = true;
-        }
-        else {
-            _active = false;
-        }
-        /*if(_active) {
-        print(route.name);
-        print(url);
-        }   */
-    };
-
     Menu.build = function (data) {
         return new Menu(
             data.name,
@@ -52,14 +35,14 @@ angular.module('verdicci.menu', ['ngRoute'])
 
     this.currentMenu = function() {
         return $filter('filter')(this.menus, {active:true}, true)[0];
-    }
+    };
 
     this.handleClick = function(menu) {
         $location.url(menu.url);
-    }
+    };
 
-    $rootScope.$on('$routeChangeStart', function(event, current, previous) {
-        angular.forEach(instance.menus, function(value, key) {
+    $rootScope.$on('$routeChangeStart', function() {
+        angular.forEach(instance.menus, function(value) {
             value.active = angular.equals($location.path(), value.url);
         });
     });

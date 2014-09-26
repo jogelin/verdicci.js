@@ -4,7 +4,7 @@ angular.module('verdicci.contact', ['ngRoute','ngMap'])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/contact', {
-        templateUrl: 'scripts/contact/contact_view.html',
+        templateUrl: 'lib/contact/contact_view.html',
         controller: 'ContactCtrl'
     });
 }])

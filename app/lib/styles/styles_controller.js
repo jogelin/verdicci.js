@@ -4,7 +4,7 @@ angular.module('verdicci.styles', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/styles/:category', {
-        templateUrl: 'scripts/styles/styles_view.html',
+        templateUrl: 'lib/styles/styles_view.html',
         controller: 'StylesCtrl'
     });
 }])

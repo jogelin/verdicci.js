@@ -4,7 +4,7 @@ angular.module('verdicci.welcome', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/welcome', {
-        templateUrl: 'scripts/welcome/welcome_view.html',
+        templateUrl: 'lib/welcome/welcome_view.html',
         controller: 'WelcomeCtrl'
     });
 }])

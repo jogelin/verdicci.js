@@ -13,21 +13,21 @@
     <title>VERDICCI - Home & Style</title>
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-
-    <!-- build:css style.css -->
+    <!--
     <link rel="stylesheet" href="../bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="../bower_components/html5-boilerplate/css/main.css">
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
-    <!-- endbuild -->
-
+t
 
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
 
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="scripts/menu/menu.css">
-    <link rel="stylesheet" href="scripts/welcome/welcome.css">
-    <link rel="stylesheet" href="scripts/styles/styles.css">
+    <link rel="stylesheet" href="lib/menu/menu.css">
+    <link rel="stylesheet" href="lib/welcome/welcome.css">
+    <link rel="stylesheet" href="lib/styles/styles.css">
+    -->
+    <link rel="stylesheet" href="styles/styles.css">
 
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
@@ -50,7 +50,7 @@
 
         <material-content scroll-y flex>
             <div class="verdicci-card material-whiteframe-z1" flex-sm="100" offset-sm="0" flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20" >
-                <div ng-include="'scripts/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
+                <div ng-include="'lib/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
                 <div ng-view flex></div>
             </div>
         </material-content>
@@ -85,12 +85,12 @@
 
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/welcome/welcome_controller.js"></script>
-    <script src="scripts/menu/menu_controller.js"></script>
-    <script src="scripts/styles/styles_controller.js"></script>
-    <script src="scripts/openhours/openhours_controller.js"></script>
-    <script src="scripts/contact/contact_controller.js"></script>
+    <script src="lib/app.js"></script>
+    <script src="lib/welcome/welcome_controller.js"></script>
+    <script src="lib/menu/menu_controller.js"></script>
+    <script src="lib/styles/styles_controller.js"></script>
+    <script src="lib/openhours/openhours_controller.js"></script>
+    <script src="lib/contact/contact_controller.js"></script>
     <!-- endbuild -->
 </body>
 </html>
