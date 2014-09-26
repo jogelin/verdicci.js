@@ -33,12 +33,13 @@ material-toolbar[verdicci-banner] {
 material-toolbar[verdicci-banner] .toolbar-title {
     font-size:50pt;
     font-weight:500;
-    padding:10px 0 0 0;
+    line-height:1;
 }
 
 material-toolbar[verdicci-banner] .toolbar-subtitle {
     font-size:24pt;
-    padding:0 0 15px 20px;
+    line-height:1;
+    padding-left:20px;
 }
 
 /*CONTENT*/
@@ -46,13 +47,14 @@ material-content {
     padding-top:30px;
 }
 
-.verdicci-card{
+material-content > div {
     background-color:#F6F1EB;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     padding:0 35px;
     z-index:0;
+    min-height: 650px;
 }
 
 div[ng-view] {
@@ -63,3 +65,23 @@ div[lines-content] > div {
 }
 
 map, div[map] {display:block; height: 400px}
+
+@media (min-width: 1500px) {
+  [flex-xlg] {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  [flex-xlg="60"] {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 60%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 60%;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%; }
+  [offset-xlg="20"] {
+    margin-left: 20%; }
+}

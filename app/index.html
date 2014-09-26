@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VERDICCI - Home & Style</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -37,23 +37,17 @@
     <div layout="vertical" layout-fill>
         <material-toolbar class="material-whiteframe-z1" verdicci-banner>
             <div layout="horizontal" flex>
-                <div flex="20"></div>
-                <div layout="vertical" layout-align="center start" flex>
+                <div layout="vertical" layout-align="center start" flex-sm="100" offset-sm="0" flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20">
                     <div class="toolbar-title">VERDICCI</div>
                     <div class="toolbar-subtitle">HOME & STYLE</div>
                 </div>
-                <div flex="20"></div>
             </div>
         </material-toolbar>
 
         <material-content scroll-y flex>
-            <div flex layout="horizontal" layout-fill>
-                <div flex="20"></div>
-                <div flex  layout="vertical" class="verdicci-card material-whiteframe-z1">
-                    <div ng-include="'scripts/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
-                    <div ng-view flex></div>
-                </div>
-                <div flex="20"></div>
+            <div class="verdicci-card material-whiteframe-z1" flex-sm="100" offset-sm="0" flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20" >
+                <div ng-include="'scripts/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
+                <div ng-view flex></div>
             </div>
         </material-content>
     </div>
