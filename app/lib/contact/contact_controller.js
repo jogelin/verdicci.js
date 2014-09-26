@@ -9,6 +9,6 @@ angular.module('verdicci.contact', ['ngRoute','ngMap'])
     });
 }])
 
-.controller('ContactCtrl', ['$scope', function() {
+.controller('ContactCtrl', function() {
 
-}]);
+});

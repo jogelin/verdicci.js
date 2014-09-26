@@ -12,6 +12,7 @@ var rimraf = require('gulp-rimraf');
 var mainBowerFiles = require('main-bower-files');
 var debug = require('gulp-debug');
 var browserSync = require('browser-sync');
+var runSequence = require('run-sequence');
 
 var bases = {
     app: 'app/',
@@ -20,7 +21,7 @@ var bases = {
 
 var paths = {
     scripts: ['lib/**/*.js'],
-    styles: ['**/*.css'],
+    styles: ['**/*.css', '!styles/webfontkit/**/*.css'],
     html: ['**/*.html'],
     images: ['images/**/*.png'],
     fonts: ['styles/webfontkit/*.eot', 'styles/webfontkit/*.svg', 'styles/webfontkit/*.ttf', 'styles/webfontkit/*.woff', 'styles/webfontkit/*.woff2'],
@@ -28,14 +29,14 @@ var paths = {
     extras: ['.htaccess', 'robots.txt', 'favicon.ico'],
 };
 
-// CLEAN BUILD
+// CLEAN
 gulp.task('build-clean', function() {
     return gulp.src(bases.dist)
         .pipe(rimraf());
 });
 
 // APP
-gulp.task('build-copy', ['build-clean'], function() {
+gulp.task('build-copy', function() {
     // Copy html
     gulp.src(paths.html, {cwd: bases.app})
         .pipe(gulp.dest(bases.dist));
@@ -54,12 +55,13 @@ gulp.task('build-copy', ['build-clean'], function() {
 
     // Copy datas
     gulp.src(paths.datas, {cwd: bases.app})
-        .pipe(gulp.dest(bases.dist + 'data'));
+        .pipe(gulp.dest(bases.dist + 'data'))
+        .pipe(browserSync.reload({stream:true}));
 
 });
 
-gulp.task('build-scripts', ['build-clean'], function() {
-    gulp.src(paths.scripts, {cwd: bases.app})
+gulp.task('build-scripts', function() {
+    return gulp.src(paths.scripts, {cwd: bases.app})
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(uglify())
@@ -67,7 +69,7 @@ gulp.task('build-scripts', ['build-clean'], function() {
         .pipe(gulp.dest(bases.dist + 'scripts/'));
 });
 
-gulp.task('build-css', ['build-clean'], function() {
+gulp.task('build-css', function() {
     return gulp.src(paths.styles, {cwd: bases.app})
         .pipe(minifyCSS({keepBreaks:true}))
         .pipe(concat('styles.min.css'))
@@ -75,21 +77,40 @@ gulp.task('build-css', ['build-clean'], function() {
 });
 
 // BOWER
-gulp.task('build-bower-dependencies', ['build-clean'], function() {
- 	return gulp.src(mainBowerFiles())
+gulp.task('build-bower-dependencies', function() {
+ 	gulp.src(mainBowerFiles())
 		.pipe(filter('*.js'))
 		.pipe(uglify())
 		.pipe(concat('bower.min.js'))
 		.pipe(gulp.dest(bases.dist + 'scripts/'));
+
+ 	gulp.src(mainBowerFiles())
+		.pipe(filter('*.css'))
+		.pipe(minifyCSS({keepBreaks:true}))
+		.pipe(concat('bower.min.css'))
+		.pipe(gulp.dest(bases.dist + 'styles/'));
  });
 
 // MAIN
-gulp.task('build', ['build-clean','build-scripts','build-css','build-bower-dependencies','build-copy']);
+gulp.task('watch', function() {
+    gulp.watch(bases.app + paths.scripts, ['build-scripts']);
+    gulp.watch(bases.app + paths.styles, ['build-styles']);
+    gulp.watch(bases.app + paths.html, ['build-copy']);
+    gulp.watch(bases.app + paths.datas, ['build-copy']);
+    gulp.watch(bases.app + paths.fonts, ['build-copy']);
+    gulp.watch(bases.app + paths.images, ['build-copy']);
+    gulp.watch(bases.app + paths.extras, ['build-copy']);
+    gulp.watch(mainBowerFiles(), ['build-bower-dependencies']);
+});
 
-gulp.task('default', ['build']);
+gulp.task('build', function(callback) {
+    return runSequence('build-clean',
+        ['build-scripts','build-css','build-bower-dependencies','build-copy'],
+        'watch',
+        callback);
+});
 
 /*SERVER*/
-var reload = browserSync.reload;
 gulp.task('serve', function() {
     browserSync({
         server: {
@@ -97,5 +118,5 @@ gulp.task('serve', function() {
         }
     });
 
-    gulp.watch(['./**/*.html', './**/*.js', './**/*.css'], {cwd: bases.dist}, reload);
+    gulp.watch(['./**/*.*'], {cwd: bases.dist}, browserSync.reload);
 });
