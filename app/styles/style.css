@@ -48,9 +48,9 @@ material-content {
 
 .verdicci-card{
     background-color:#F6F1EB;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     padding:0 35px;
     z-index:0;
 }
@@ -63,7 +63,3 @@ div[lines-content] > div {
 }
 
 map, div[map] {display:block; height: 400px}
-
-.view {
-    min-height:600px;
-}

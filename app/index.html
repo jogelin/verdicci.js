@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VERDICCI - Home & Style</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -29,16 +29,16 @@
 
     <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body layout="vertical" layout-fill >
+<body >
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
     <![endif]-->
-
+    <div layout="vertical" layout-fill>
         <material-toolbar class="material-whiteframe-z1" verdicci-banner>
             <div layout="horizontal" flex>
                 <div flex="20"></div>
-                <div layout="vertical" layout-align="center start" flex-sm="95" flex-lg="65">
+                <div layout="vertical" layout-align="center start" flex>
                     <div class="toolbar-title">VERDICCI</div>
                     <div class="toolbar-subtitle">HOME & STYLE</div>
                 </div>
@@ -46,15 +46,17 @@
             </div>
         </material-toolbar>
 
-        <material-content layout="horizontal" scroll-y flex>
-            <div flex="20"></div>
-            <div flex  layout="vertical">
-                <div class="verdicci-card" ng-include="'scripts/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
-                <div ng-view flex></div>
+        <material-content scroll-y flex>
+            <div flex layout="horizontal" layout-fill>
+                <div flex="20"></div>
+                <div flex  layout="vertical" class="verdicci-card material-whiteframe-z1">
+                    <div ng-include="'scripts/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
+                    <div ng-view flex></div>
+                </div>
+                <div flex="20"></div>
             </div>
-            <div flex="20"></div>
         </material-content>
-
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
      <script>
