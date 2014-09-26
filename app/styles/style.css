@@ -54,7 +54,7 @@ material-content > div {
     border-radius: 5px;
     padding:0 35px;
     z-index:0;
-    min-height: 650px;
+    min-height: 700px;
 }
 
 div[ng-view] {
