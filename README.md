@@ -14,6 +14,10 @@ AngularJs Website for www.verdicci.be
 - Connect to the host (ftp)
 - Copy the content of the build folder to the www root of the ftp
 
-
+###Content management :
+- All static text are include directly in the .html
+- To add a news, add a new entry in the file data/news.json :
+  - id -> folder name containing the resources of the news  
+- To add a news, add a new entry in the file data/news.json
 
 
