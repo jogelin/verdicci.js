@@ -16,12 +16,15 @@ AngularJs Website for www.verdicci.be
 
 ###Content management :
 - All static text are included directly in the .html
+
 - All news content are specified in data/news.json and data/news/[idNews]
 - To add a news, add a new entry in the file data/news.json :
   - id -> folder name containing the resources/images of the news
   - name -> name of the news (pink title beginning the description)
   - image -> image name of the news placed in the corresponding news folder
   - description -> text content of the news
+
+- All styles content are specified in data/styles.json and data/styles/[idStyles]
 - To add a style, add a new entry in the file data/styles.json
   - id -> folder name containing the resources/images of the styles
   - name -> title of the style
