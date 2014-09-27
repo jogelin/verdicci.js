@@ -1,5 +1,4 @@
 ##Verdicci
-=
 AngularJs Website for www.verdicci.be
 
 ###How to install for developper :
