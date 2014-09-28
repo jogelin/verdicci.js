@@ -43,18 +43,22 @@ material-toolbar[verdicci-banner] .toolbar-subtitle {
 }
 
 /*CONTENT*/
-material-content {
-    padding-top:30px;
+#page-container {
+   // padding-top:30px;
 }
 
-material-content > div {
-    background-color:#F6F1EB;
+.verdicci-card {
+  /*  background-color:#F6F1EB;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     padding:0 35px;
-    z-index:0;
-    min-height: 700px;
+    z-index:0;  */
+    /*min-height: 700px; */
+}
+
+material-content {
+min-height: 700px;
 }
 
 div[ng-view] {

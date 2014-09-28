@@ -48,12 +48,22 @@
             </div>
         </material-toolbar>
 
-        <material-content scroll-y flex>
+        <div id="page-container" layout="horizontal" flex>
             <div class="verdicci-card material-whiteframe-z1" flex-sm="100" offset-sm="0" flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20" >
-                <div ng-include="'lib/menu/menu_view.html'" ng-controller="MenuCtrl as menuCtrl"></div>
-                <div ng-view flex></div>
+                <div ng-controller="MenuCtrl as menuCtrl">
+                    <div ng-include="'lib/menu/menu_view.html'"></div>
+                    <material-content scroll-y flex>
+                        <div id="view-title" layout="horizontal">
+                            <div><h1>VERDICCI</h1></div>
+                            <div>&nbsp;<img src="images/heart_small.png"/>&nbsp;</div>
+                            <div flex><h1>{{menuCtrl.currentMenu().title}}</h1></div>
+                        </div>
+                        <div ng-view flex></div>
+                    </material-content>
+                </div>
             </div>
-        </material-content>
+        </div>
+
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID

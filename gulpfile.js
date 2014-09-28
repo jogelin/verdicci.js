@@ -94,7 +94,7 @@ gulp.task('build-bower-dependencies', function() {
 // MAIN
 gulp.task('watch', function() {
     gulp.watch(bases.app + paths.scripts, ['build-scripts']);
-    gulp.watch(bases.app + paths.styles, ['build-styles']);
+    gulp.watch(bases.app + paths.styles[0], ['build-css']);
     gulp.watch(bases.app + paths.html, ['build-copy']);
     gulp.watch(bases.app + paths.datas, ['build-copy']);
     gulp.watch(bases.app + paths.fonts, ['build-copy']);

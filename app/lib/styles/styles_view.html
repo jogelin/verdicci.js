@@ -1,5 +1,5 @@
 <div layout="vertical" ng-controller="StylesCtrl as stylesCtrl">
-    <div ng-repeat="style in stylesCtrl.styles | filter:{category:stylesCtrl.currentCategory}" layout="vertical">
+    <div ng-repeat="style in stylesCtrl.styles | filter:{category:stylesCtrl.currentCategory} track by $index" layout="vertical">
         <div layout="horizontal">
             <h3>{{style.name}}.</h3>&nbsp;&nbsp;<h4 class="pink">{{style.label}}</h4>
         </div>

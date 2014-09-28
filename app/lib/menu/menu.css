@@ -50,7 +50,7 @@ material-button[menu-icon].material-button-fab:hover {
     background-color: transparent;
 }
 
-material-button[menu-icon] > button > img {
+material-button[menu-icon] > a > img {
     height:46px;
     width:46px;
 }
