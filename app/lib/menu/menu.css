@@ -1,22 +1,15 @@
 
 material-toolbar[verdicci-menu] {
     margin-bottom:20px;
-
+    padding:0 35px;
 }
 
 #menu-button-content {
     padding: 10px 0;
 }
 
-material-button[menu-button] {
-    font-family:hellogoodbye;
-    font-size:24pt;
-    color:#8A908E;
-    white-space: nowrap;
-    padding:0;
-}
 
-material-button[menu-button], material-button[disabled], material-button[menu-button]:hover {
+material-button.menu-button, material-button.menu-button[disabled], material-button.menu-button:hover {
 
     background-image: url('../../images/menu_underline.png') !important;
     -webkit-background-size: 100% 10px !important;
@@ -28,11 +21,20 @@ material-button[menu-button], material-button[disabled], material-button[menu-bu
     background-color: transparent !important;
 }
 
-material-button[disabled] {
+material-button.menu-button {
+    font-family:hellogoodbye;
+    line-height:1em;
+    font-size:1.5em;
+    color:#8A908E;
+    white-space: nowrap;
+    padding:0;
+}
+
+material-button.menu-button[disabled] {
     color:#B9C1BE !important;
 }
 
-material-button[menu-button]:hover {
+material-button.menu-button:hover {
     color:#F29AA4; !important;
 }
 
@@ -53,4 +55,37 @@ material-button[menu-icon].material-button-fab:hover {
 material-button[menu-icon] > a > img {
     height:46px;
     width:46px;
+}
+
+
+.material-sidenav-left.open {
+    padding-top:70px;
+    background-color:#F6F1EB;
+}
+
+material-button.menu-button-slider, material-button.menu-button-slider[disabled], material-button.menu-button-slider:hover {
+    background-image: none !important;
+}
+
+material-button.menu-button-slider {
+
+    line-height:1.5em;
+    font-size:2em;
+}
+
+material-button.menu-button:hover {
+    color:#F29AA4; !important;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    material-toolbar[verdicci-menu] {
+        margin-bottom:10px;
+        padding:0 10px;
+    }
+
+    #menu-button-content {
+        padding: 5px 0;
+    }
 }

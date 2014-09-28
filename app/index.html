@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VERDICCI - Home & Style</title>
     <meta name="description" content="">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <!--
     <link rel="stylesheet" href="../bower_components/html5-boilerplate/css/normalize.css">
     <link rel="stylesheet" href="../bower_components/html5-boilerplate/css/main.css">
@@ -33,35 +33,35 @@
 
     <!--script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script-->
 </head>
-<body >
+<body>
+
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div layout="vertical" layout-fill>
+
+    <div layout="vertical" layout-align="start center" layout-fill tabindex="-1" role="main" ng-controller="MenuCtrl as menuCtrl">
         <material-toolbar class="material-whiteframe-z1" verdicci-banner>
-            <div layout="horizontal" flex>
-                <div layout="vertical" layout-align="center start" flex-sm="100" offset-sm="0" flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20">
+
+                <div layout="horizontal" layout-md="vertical" layout-lg="vertical" flex flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20">
                     <div class="toolbar-title">VERDICCI</div>
                     <div class="toolbar-subtitle">HOME & STYLE</div>
-                </div>
-            </div>
-        </material-toolbar>
 
-        <div id="page-container" layout="horizontal" flex>
-            <div class="verdicci-card material-whiteframe-z1" flex-sm="100" offset-sm="0" flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20" >
-                <div ng-controller="MenuCtrl as menuCtrl">
-                    <div ng-include="'lib/menu/menu_view.html'"></div>
-                    <material-content scroll-y flex>
-                        <div id="view-title" layout="horizontal">
-                            <div><h1>VERDICCI</h1></div>
-                            <div>&nbsp;<img src="images/heart_small.png"/>&nbsp;</div>
-                            <div flex><h1>{{menuCtrl.currentMenu().title}}</h1></div>
-                        </div>
-                        <div ng-view flex></div>
-                    </material-content>
                 </div>
-            </div>
+
+        </material-toolbar>
+        <div id="page-container" layout="horizontal" flex>
+            <div id="page" class="material-whiteframe-z1" layout="vertical"  flex flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20">
+                <div ng-include="'lib/menu/menu_view.html'"></div>
+                <material-content scroll-y flex>
+                    <div id="view-title" layout="horizontal" >
+                        <div><h1>VERDICCI</h1></div>
+                        <div>&nbsp;<h1><img src="images/heart_small.png"/></h1>&nbsp;</div>
+                        <div flex><h1>{{menuCtrl.currentMenu().title}}</h1></div>
+                    </div>
+                    <div ng-view flex></div>
+                </material-content>
+             </div>
         </div>
 
     </div>

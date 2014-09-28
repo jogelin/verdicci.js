@@ -23,7 +23,7 @@ angular.module('verdicci.menu', ['ngRoute'])
     return Menu;
 })
 
-.controller('MenuCtrl', ['Menu', '$filter','$location','$rootScope', function(Menu, $filter, $location, $rootScope) {
+.controller('MenuCtrl', ['Menu', '$filter','$location','$rootScope', '$materialSidenav', function(Menu, $filter, $location, $rootScope,$materialSidenav) {
     var instance = this;
     this.menus = [
         new Menu('ACCEUIL', 'YOU', '/welcome', true),
@@ -39,6 +39,11 @@ angular.module('verdicci.menu', ['ngRoute'])
 
     this.handleClick = function(menu) {
         $location.url(menu.url);
+        this.toggleLeftMenu();
+    };
+
+    this.toggleLeftMenu = function() {
+        $materialSidenav('left').toggle();
     };
 
     $rootScope.$on('$routeChangeStart', function() {
