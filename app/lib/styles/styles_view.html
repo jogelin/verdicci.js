@@ -1,11 +1,11 @@
 <div layout="vertical" ng-controller="StylesCtrl as stylesCtrl">
-    <div ng-repeat="style in stylesCtrl.styles | filter:{category:stylesCtrl.currentCategory} track by $index" layout="vertical">
+    <div ng-repeat="style in stylesCtrl.styles | filter:{category:stylesCtrl.currentCategory}" layout="vertical">
         <div layout="horizontal">
             <h3>{{style.name}}.</h3>&nbsp;&nbsp;<h4 class="pink">{{style.label}}</h4>
         </div>
-        <div id="style-line" layout="horizontal" layout-align="space-around">
-            <div ng-if="$parent.$even" ng-repeat="img in style.images" layout="horizontal" flex="30">
-                <img  class="material-whiteframe-z1" id="style-image" ng-src="data/styles/{{style.id}}/{{img}}">
+        <div id="style-line" layout="horizontal" layout-align="space-around" hide display-md-flex>
+            <div ng-if="$parent.$even" ng-repeat="img in style.images" layout="horizontal"  flex="30">
+                <img class="material-whiteframe-z1" id="style-image" ng-src="data/styles/{{style.id}}/{{img}}" />
             </div>
             <div layout="vertical" flex="40">
                 <div id="style-description">{{style.description}}</div>
@@ -15,6 +15,24 @@
             </div>
             <div ng-if="$parent.$odd" ng-repeat="img in style.images" layout="horizontal" layout-align="end" flex="30">
                 <img  class="material-whiteframe-z1" id="style-image" ng-src="data/styles/{{style.id}}/{{img}}">
+            </div>
+        </div>
+        <div id="style-line" layout="horizontal" layout-align="space-around" hide-md hide-lg>
+            <div ng-if="$even" layout="vertical" flex="45">
+                <div ng-repeat="img in style.images" layout="horizontal">
+                    <img class="material-whiteframe-z1" id="style-image" ng-src="data/styles/{{style.id}}/{{img}}" />
+                </div>
+            </div>
+            <div layout="vertical" flex="45">
+                <div id="style-description">{{style.description}}</div>
+                <div layout="horizontal"  layout-align="end end">
+                    <div><img id="style-brand" ng-src="data/styles/{{style.id}}/{{style.brandIcon}}" /></div>
+                </div>
+            </div>
+            <div ng-if="$odd" layout="vertical" flex="45">
+                <div ng-repeat="img in style.images" layout="horizontal" layout-align="end">
+                    <img class="material-whiteframe-z1" id="style-image" ng-src="data/styles/{{style.id}}/{{img}}" />
+                </div>
             </div>
         </div>
     </div>
