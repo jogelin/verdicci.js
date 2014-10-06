@@ -26,7 +26,7 @@ angular.module('verdicci.menu', ['ngRoute'])
 .controller('MenuCtrl', ['Menu', '$filter','$location','$rootScope', '$materialSidenav', function(Menu, $filter, $location, $rootScope,$materialSidenav) {
     var instance = this;
     this.menus = [
-        new Menu('ACCEUIL', 'YOU', '/welcome', true),
+        new Menu('ACCUEIL', 'YOU', '/welcome', true),
         new Menu('HOME', 'HOME', '/styles/home', false),
         new Menu('STYLE', 'STYLE', '/styles/style', false),
         new Menu('ACCESSOIRES', 'ACCESSOIRES', '/styles/accessories', false),

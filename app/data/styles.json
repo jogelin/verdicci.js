@@ -2,32 +2,8 @@
   {
     "id":"baker_bridge",
     "name":"BAKER BRIDGE",
-    "label":"LA PETITE NOTE DE CLASSICISME EN PLUS...",
-    "description":"BAKER BRIDGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor en",
-    "images":[
-        "img1.png",
-        "img2.png"
-    ],
-    "brandIcon":"baker-bridge.png",
-    "category":"home"
-  },
-  {
-    "id":"american_vintage",
-    "name":"AMERICAN VINTAGE",
-    "label":"LE STYLE PUR ET AUTHENTIQUE",
-    "description":"AMERICAN VINTAGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor enim, eget dignissim lorem commodo at. In a augue id sem lacinia semper. In tincidunt ullamcorper imperdiet. Aliquam pellentesque massa id tempus vulputate. Aliquam sodales a felis ut tempor",
-    "images":[
-        "img1.png",
-        "img2.png"
-    ],
-    "brandIcon":"logo-american-vintage.png",
-    "category":"home"
-  },
-  {
-    "id":"baker_bridge",
-    "name":"BAKER BRIDGE",
-    "label":"LA PETITE NOTE DE CLASSICISME EN PLUS...",
-    "description":"BAKER BRIDGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor en",
+    "label":"La petite note de classicisme en plus...",
+    "description":"BAKER BRIDGE est une griffe décontractée, élégante et empreinte de fraîcheur. Des coloris vifs, toujours agrémentés d’une note marine, faciles à assortir et à la pointe de la mode. Véritable coup de cœur de VERDICCI, une large gamme d’articles BAKER BRIDGE vous sera proposée en boutique.",
     "images":[
         "img1.png",
         "img2.png"
@@ -38,13 +14,157 @@
   {
     "id":"american_vintage",
     "name":"AMERICAN VINTAGE",
-    "label":"LE STYLE PUR ET AUTHENTIQUE",
-    "description":"AMERICAN VINTAGE lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis dignissim nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam pellentesque tortor enim, eget dignissim lorem commodo at. In a augue id sem lacinia semper. In tincidunt ullamcorper imperdiet. Aliquam pellentesque massa id tempus vulputate. Aliquam sodales a felis ut tempor",
+    "label":"Un style pur et authentique",
+    "description":"AMERICAN VINTAGE séduit grâce à des collections faciles à porter, des matières de choix et de qualité pour des tenues aérées et légères. La marque utilise des matières faites de fibres naturelles, pour un résultat très fin et délicat. AMERICAN VINTAGE propose des pièces basiques qui se mélangent à l'infini. On aime superposer des matières et couleurs différentes pour un look chic et décontracté.",
     "images":[
         "img1.png",
         "img2.png"
     ],
     "brandIcon":"logo-american-vintage.png",
+    "category":"style"
+  },
+  {
+    "id":"vila_clothes",
+    "name":"VILA CLOTHES",
+    "label":"Un look A la pointe de la tendance",
+    "description":"Le style VILA CLOTHES est un mélange d’imprimés fins, de coupes délicates et de détails féminins. Les designers VILA CLOTHES s’adaptent constamment aux dernières tendances tant en matière de style que de qualité, couleurs et modèles. Ils s’inspirent de ce qui est présenté aux salons de la mode mais aussi de ce qu’ils voient dans la rue et les grandes villes.  Le design de VILA CLOTHES est flexible et stylé visant à combler les besoins des femmes les plus exigeantes en quête de nouveauté. La femme VILA CLOTHES est naturelle et féminine, pétillante et créative, elle aime la mode et exprime sa personnalité à travers son style.",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"style"
+  },
+  {
+    "id":"des_petits_hauts",
+    "name":"DES PETITS HAUTS",
+    "label":"La vie en plus jolie",
+    "description":"L’objectif des créatrices de la marque : créer le petit haut idéal. Pour ce faire, elles se concentrent sur les matières les plus douces et les plus légères, cherchent la couleur rare qui rend belle et chinent le petit détail fantaisie. Un résultat convainquant qui nous fait voir la vie en plus jolie !",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"style"
+  },
+  {
+    "id":"stella_forest",
+    "name":"STELLA FOREST",
+    "label":"STELLA pour l’EToile qui scintille et FOREST pour l’attachement aux racines",
+    "description":"Créées au cœur de Paris dans une féérie de couleurs et de matières,  les collections STELLA FOREST sont uniques et  faciles à porter. Tout en suggérant la tendance, les créations sont intemporelles et magiques. L’identité forte de STELLA FOREST s’articule autour d’imprimés exclusifs.",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"style"
+  },
+  {
+    "id":"cks_women",
+    "name":"CKS WOMEN",
+    "label":"UN LOOK MODERNE ET SURPRENANT",
+    "description":"CKS WOMEN propose des silhouettes modernes, aux accents surprenants et branchés. Un look unique où la classe se marie à l’élégance et à la distinction. De nombreuses collections qui permettent d’avoir constamment des nouveautés en boutique.",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"style"
+  },
+  {
+    "id":"greengate",
+    "name":"GREENGATE",
+    "label":"Le charme scandinave tout en sobriété et imprimés fleuris ",
+    "description":"GREENGATE est une marque scandinave de décoration d’intérieur spécialisée dans les produits pour la maison et inspirée par les motifs fleuris anciens et le style de vie sobre de Scandinavie.",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"home"
+  },
+  {
+    "id":"rader",
+    "name":"RADER",
+    "label":"UN DESIGN SENSIBLE et des messages TENDRES",
+    "description":"Les produits RÄDER parlent d’amour, de bonheur, de rire et de la vie en général. La collection reflète une magie et une poésie qui trouve son inspiration dans nos cœurs. Chaque produit raconte une petite histoire sur la vie elle-même. Les produits RÄDER apportent des petits moments de tendresse dans nos vies comme un cadeau.",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"home"
+  },
+  {
+    "id":"harmony-dubos",
+    "name":"HARMONY-DUBOS",
+    "label":"DU LINGE DE MAISON SIMPLE ET DOUX",
+    "description":"HARMONY-DUBOS propose une large gamme de linge de maison allant de la nappe aux serviettes de bain ou de plage en passant par les couvre-lits, plaids et coussins tendance. Tous les modèles sont déclinés dans différentes couleurs et matières afin de satisfaire aux goûts et envies de chacun.",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"home"
+  },
+  {
+    "id":"cote_table",
+    "name":"COTE TABLE",
+    "label":"Alliance de charme et de moderniTE",
+    "description":"L’originalité, le charme et la qualité font de la marque Côté Table un incontournable des arts de la table. Festonnées, classiques, décorées, patinées, les collections vaisselles se déclinent en belles matières et en coloris faciles à marier. Du style baroque à l’esprit bistrot chic, les lignes de couverts Côté Table s’harmonisent parfaitement avec les collections de vaisselle de la marque, qu’elles soient plus classiques ou contemporaines. L’élégance et la recherche de la verrerie Côté Table a particulièrement fait la renommée de la marque. ",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"home"
+  },
+  {
+    "id":"fariboles",
+    "name":"FARIBOLES",
+    "label":"DES SENTEURS ORIGINALES ET NATURELLES",
+    "description":"Les bougies parfumées FARIBOLES faites en cire naturelle avec des mèches en pur coton font la promesse d'une lumière romantique mêlée à un parfum subtil. Les collections FARIBOLES apportent fraîcheur et nouveauté au monde des parfums de maison. Une multitude de créations pour un bonheur toujours plus grand !",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"home"
+  },
+  {
+    "id":"savonnerie_de_bormes",
+    "name":"SAVONNERIE DE BORMES",
+    "label":"COULEURS, AUTHENTICITE ET PARFUMS DU SUD",
+    "description":"Une gamme de gels douche, savons, parfums d’ambiance, brumes d’oreiller aux huiles essentielles et savons de toutes les couleurs. Senteurs de Provence, parfums de fruits et de fleurs, telles sont les odeurs que dégagent les produits de la SAVONNERIE DE BORMES. De fabrication artisanale, tous les produits proposés sont 100% made in France et reposent sur des procédés qui trouvent leurs origines dans la plus pure tradition du savon et de la parfumerie. La SAVONNERIE DE BORMES élabore par son savoir des produits traditionnels et sans parabène, toujours plus près de vos exigences en recherchant des fragrances rares et subtiles qui vous emmèneront dans un monde de douceur et de sérénité. ",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"home"
+  },
+  {
+    "id":"becksondergaard",
+    "name":"BECKSONDERGAARD",
+    "label":"DES FOULARDS IMPRIMES et DES SACS COLORES",
+    "description":"BECKSONDERGAARD est un label d’accessoires danois fondé en 2003 par Anna Sondergard et Lis Beck. La simplicité scandinave et leur amour pour une palette de couleurs unique, des imprimés dessinés à la main et des modèles en cuir souple font leur identité. ",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
+    "category":"accessories"
+  },
+  {
+    "id":"oscar_bijoux",
+    "name":"OSCAR BIJOUX",
+    "label":"DES BIJOUX SO CUTE !",
+    "description":"OSCAR Bijoux propose une collection complète de bijoux fantaisie : des bracelets, des colliers, des bagues et des headbands. Tous les bijoux OSCAR sont en argent ou en plaqué or avec des perles de cristal de toutes les couleurs. ",
+    "images":[
+        "img1.png",
+        "img2.png"
+    ],
+    "brandIcon":"brand.png",
     "category":"accessories"
   }
 ]
