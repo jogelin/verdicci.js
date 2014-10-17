@@ -1,26 +1,26 @@
-<material-sidenav class="material-sidenav-left material-whiteframe-z2" component-id="left" block hide-md hide-lg>
-    <material-content class="material-content-padding">
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" component-id="left" block hide-md hide-lg>
+    <md-content class="material-content-padding">
         <div layout="vertical"  layout-align="start center">
-            <material-button ng-repeat="menu in menuCtrl.menus"
-                             ng-click="menuCtrl.handleClick(menu)" ng-disabled="menu.active" class="menu-button menu-button-slider">{{menu.name}}</material-button>
+            <md-button ng-repeat="menu in menuCtrl.menus"
+                             ng-click="menuCtrl.handleClick(menu)" ng-disabled="menu.active" class="menu-button menu-button-slider">{{menu.name}}</md-button>
             <br /><br/>
             <div layout="horizontal" layout-align="center">
-                <material-button class="material-button-fab" href="http://www.facebook.com/verdicci" target="_blank" menu-icon><img src="images/icon_facebook.png" /></material-button>
-                <material-button class="material-button-fab" href="http://instagram.com/verdicci_profondeville" target="_blank" menu-icon ><img src="images/icon_instagram.png" /></material-button>
+                <md-button class="md-button-fab" href="http://www.facebook.com/verdicci" target="_blank" menu-icon><img src="images/icon_facebook.png" /></md-button>
+                <md-button class="md-button-fab" href="http://instagram.com/verdicci_profondeville" target="_blank" menu-icon ><img src="images/icon_instagram.png" /></md-button>
             </div>
         </div>
-    </material-content>
-</material-sidenav>
-<material-toolbar verdicci-menu hide block-md block-lg>
+    </md-content>
+</md-sidenav>
+<md-toolbar verdicci-menu hide block-md block-lg>
     <div layout="horizontal">
         <div id="menu-button-content" layout="horizontal" layout-align="space-between" flex="80">
-            <material-button ng-repeat="menu in menuCtrl.menus"
-                      ng-click="menuCtrl.handleClick(menu)" ng-disabled="menu.active" class="menu-button">{{menu.name}}</material-button>
+            <md-button ng-repeat="menu in menuCtrl.menus"
+                      ng-click="menuCtrl.handleClick(menu)" ng-disabled="menu.active" class="menu-button">{{menu.name}}</md-button>
         </div>
         <div id="menu-icon-content" layout="horizontal" layout-align="space-around" flex="20">
             <div flex></div>
-            <div layout="horizontal" layout-align="end" flex><material-button class="material-button-fab" href="http://www.facebook.com/verdicci" target="_blank" menu-icon><img src="images/icon_facebook.png" /></material-button></div>
-            <div layout="horizontal" layout-align="end" flex><material-button class="material-button-fab" href="http://instagram.com/verdicci_profondeville" target="_blank" menu-icon ><img src="images/icon_instagram.png" /></material-button></div>
+            <div layout="horizontal" layout-align="end" flex><md-button class="md-button-fab" href="http://www.facebook.com/verdicci" target="_blank" menu-icon><img src="images/icon_facebook.png" /></md-button></div>
+            <div layout="horizontal" layout-align="end" flex><md-button class="md-button-fab" href="http://instagram.com/verdicci_profondeville" target="_blank" menu-icon ><img src="images/icon_instagram.png" /></md-button></div>
         </div>
     </div>
-</material-toolbar>
+</md-toolbar>

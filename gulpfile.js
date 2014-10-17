@@ -64,7 +64,7 @@ gulp.task('build-scripts', function() {
     return gulp.src(paths.scripts, {cwd: bases.app})
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest(bases.dist + 'scripts/'));
 });

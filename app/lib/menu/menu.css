@@ -1,5 +1,5 @@
 
-material-toolbar[verdicci-menu] {
+md-toolbar[verdicci-menu] {
     margin-bottom:20px;
     padding:0 35px;
 }
@@ -9,7 +9,7 @@ material-toolbar[verdicci-menu] {
 }
 
 
-material-button.menu-button, material-button.menu-button[disabled], material-button.menu-button:hover {
+md-button.menu-button, md-button.menu-button[disabled], md-button.menu-button:hover {
 
     background-image: url('../../images/menu_underline.png') !important;
     -webkit-background-size: 100% 10px !important;
@@ -21,7 +21,7 @@ material-button.menu-button, material-button.menu-button[disabled], material-but
     background-color: transparent !important;
 }
 
-material-button.menu-button {
+md-button.menu-button {
     font-family:hellogoodbye;
     line-height:1em;
     font-size:1.5em;
@@ -30,11 +30,11 @@ material-button.menu-button {
     padding:0;
 }
 
-material-button.menu-button[disabled] {
+md-button.menu-button[disabled] {
     color:#B9C1BE !important;
 }
 
-material-button.menu-button:hover {
+md-button.menu-button:hover {
     color:#F29AA4; !important;
 }
 
@@ -42,45 +42,45 @@ material-button.menu-button:hover {
     padding: 7px 0;
 }
 
-material-button[menu-icon].material-button-fab {
+md-button[menu-icon].md-button-fab {
     box-shadow:none;
-    height:54px;
-    width:54px;
+    height:56px;
+    width:56px;
 }
 
-material-button[menu-icon].material-button-fab:hover {
+md-button[menu-icon].md-button-fab:hover {
     background-color: transparent;
 }
 
-material-button[menu-icon] > a > img {
+md-button[menu-icon] > a > img {
     height:46px;
     width:46px;
 }
 
 
-.material-sidenav-left.open {
+.md-sidenav-left.open {
     padding-top:70px;
     background-color:#F6F1EB;
 }
 
-material-button.menu-button-slider, material-button.menu-button-slider[disabled], material-button.menu-button-slider:hover {
+md-button.menu-button-slider, md-button.menu-button-slider[disabled], md-button.menu-button-slider:hover {
     background-image: none !important;
 }
 
-material-button.menu-button-slider {
+md-button.menu-button-slider {
 
     line-height:1.5em;
     font-size:2em;
 }
 
-material-button.menu-button:hover {
+md-button.menu-button:hover {
     color:#F29AA4; !important;
 }
 
 
 @media screen and (max-width: 600px) {
 
-    material-toolbar[verdicci-menu] {
+    md-toolbar[verdicci-menu] {
         margin-bottom:10px;
         padding:0 10px;
     }

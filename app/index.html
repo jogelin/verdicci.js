@@ -45,30 +45,30 @@
     <![endif]-->
 
     <div layout="vertical" layout-align="start center" layout-fill tabindex="-1" role="main" ng-controller="MenuCtrl as menuCtrl">
-        <material-toolbar class="material-whiteframe-z1" verdicci-banner>
+        <md-toolbar class="material-whiteframe-z1" verdicci-banner>
 
                 <div layout="horizontal" layout-md="vertical" layout-lg="vertical" flex  offset-md="5" offset-lg="10" offset-xlg="20">
                     <div class="toolbar-title">VERDICCI</div>
                     <div class="toolbar-subtitle">HOME & STYLE</div>
                     <div layout="horizontal" layout-align="end" flex>
-                        <material-button id="button-slider"  ng-click="menuCtrl.toggleLeftMenu()" block hide-md hide-lg>
+                        <md-button id="button-slider"  ng-click="menuCtrl.toggleLeftMenu()" block hide-md hide-lg>
                             <img src="images/icon-menu.png" />
-                        </material-button>
+                        </md-button>
                     </div>
                 </div>
 
-        </material-toolbar>
+        </md-toolbar>
         <div id="page-container" layout="horizontal" flex>
             <div id="page" class="material-whiteframe-z1" layout="vertical" flex flex-md="90" offset-md="5" flex-lg="80" offset-lg="10" flex-xlg="60" offset-xlg="20">
                 <div ng-include="'lib/menu/menu_view.html'"></div>
-                <material-content scroll-y flex>
+                <md-content scroll-y flex>
                     <div id="view-title" layout="horizontal" >
                         <div><h1>VERDICCI</h1></div>
                         <div>&nbsp;<h1><img src="images/heart_small.png"/></h1>&nbsp;</div>
                         <div flex><h1>{{menuCtrl.currentMenu().title}}</h1></div>
                     </div>
                     <div ng-view flex></div>
-                </material-content>
+                </md-content>
              </div>
         </div>
 

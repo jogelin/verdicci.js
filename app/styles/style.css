@@ -20,7 +20,7 @@ body {
 }
 
 /*BANNER*/
-material-toolbar[verdicci-banner] {
+md-toolbar[verdicci-banner] {
     background-color: #B9C1BE;
     background-image: url('../images/banner_roses.png');
 
@@ -32,14 +32,14 @@ material-toolbar[verdicci-banner] {
     line-height:1em;
 }
 
-material-toolbar[verdicci-banner] .toolbar-title {
+md-toolbar[verdicci-banner] .toolbar-title {
     font-size:3.2em;
     line-height:1.4em;
     font-weight:500;
 
 }
 
-material-toolbar[verdicci-banner] .toolbar-subtitle {
+md-toolbar[verdicci-banner] .toolbar-subtitle {
     font-size:1.6em;
     line-height:0.2em;
     padding-left:20px;
@@ -61,7 +61,7 @@ material-toolbar[verdicci-banner] .toolbar-subtitle {
     /*min-height: 700px; */
 }
 
-material-content {
+md-content {
 /*min-height: 700px;    */
     padding:0 35px;
 }
@@ -110,23 +110,23 @@ map, div[map] {display:block; height: 400px}
        padding-top:0;
     }
 
-    material-content {
+    md-content {
         padding:0 10px;
     }
 
-    material-toolbar[verdicci-banner] {
+    md-toolbar[verdicci-banner] {
         margin-top:0;
         height:64px;
         padding:0 10px;
 
     }
 
-    material-toolbar[verdicci-banner] .toolbar-title {
+    md-toolbar[verdicci-banner] .toolbar-title {
         line-height:1.3em;
 
     }
 
-    material-toolbar[verdicci-banner] .toolbar-subtitle {
+    md-toolbar[verdicci-banner] .toolbar-subtitle {
         line-height:2.4em;
     }
 
