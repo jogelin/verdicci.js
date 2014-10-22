@@ -16,7 +16,7 @@
                     <img ng-src="images/polaroid_background.png"/>
                 </div>
                 <div id="news-description" class="justified" flex>
-                    <h2 class="pink">{{nn.name}}</h2> {{nn.description}}
+                    <h2 class="pink">{{nn.name}}</h2> <span ng-bind-html="nn.description"></span>
                 </div>
             </div>
         </div>

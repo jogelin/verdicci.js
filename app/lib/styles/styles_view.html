@@ -12,7 +12,8 @@
                 </md-content>
             </div>
             <div layout="vertical" flex="40">
-                <div id="style-description">{{style.description}}</div>
+                <span ng-bind-html="nn.description"></span>
+                <div id="style-description" ng-bind-html="style.description"></div>
                 <div layout="horizontal"  layout-align="end end">
                     <div><img id="style-brand" ng-src="data/styles/{{style.id}}/{{style.brandIcon}}" /></div>
                 </div>
@@ -36,7 +37,7 @@
                 </div>
             </div>
             <div layout="vertical" flex>
-                <div id="style-description">{{style.description}}</div>
+                <div id="style-description" ng-bind-html="style.description"></div>
                 <div layout="horizontal"  layout-align="end end">
                     <div><img id="style-brand" ng-src="data/styles/{{style.id}}/{{style.brandIcon}}" /></div>
                 </div>

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('verdicci.welcome', ['ngRoute'])
+angular.module('verdicci.welcome', ['ngRoute', 'ngSanitize'])
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/welcome', {
@@ -9,7 +9,7 @@ angular.module('verdicci.welcome', ['ngRoute'])
     });
 }])
 
-.controller('WelcomeCtrl',['$http', function($http) {
+.controller('WelcomeCtrl',['$http', '$sce', function($http, $sce) {
     var instance = this;
     instance.news = [];
 

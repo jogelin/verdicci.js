@@ -2,7 +2,7 @@
 
 (function(){
 
-    angular.module('verdicci', ['ngRoute','ngAnimate', 'ngMaterial','verdicci.menu','verdicci.welcome','verdicci.styles','verdicci.openhours','verdicci.contact'])
+    angular.module('verdicci', ['ngRoute','ngAnimate', 'ngMaterial', 'verdicci.menu','verdicci.welcome','verdicci.styles','verdicci.openhours','verdicci.contact'])
         .config(['$routeProvider','$compileProvider', function($routeProvider,$compileProvider) {
 
             //allow to use tel links
